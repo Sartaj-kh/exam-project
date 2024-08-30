@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam-project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container bg-white border">
+                <!-- Logo image on the left -->
+                <a class="navbar-brand" href="#">
+                    <img src="./asset/image/logo.png" alt="Logo">
+                </a>
+
+                <!-- Navbar items in the middle -->
+                <div class="navbar justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Set menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cart, Notification, and Offcanvas icons on the right -->
+                <div class="d-flex top-number-and-icon">
+                    <a class="nav-link" href="#"><p class="top-number border bg-danger text-white rounded-circle">10</p>
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                    </a>
+                    
+                    <button class="btn btn-outline-secondary border-0" type="button" id="offcanvasBtn">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas" id="offcanvasMenu">
+            <div class="offcanvas-header p-3 border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="close" id="offcanvasClose">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="list-unstyled">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas-backdrop" id="offcanvasBackdrop" style="display: none;"></div>
+        <div class="menu-text text-center">
+            <h1 class="text-white">RESTAN</h1>
+            <span class="text-white border-0 bg-danger  ">Restaurant</span>
+        </div>
+        <div class="menu-text-and-border d-flex justify-content-center">
+            <p class="text-white text-center">Book your table now</p>
+            <div class="horizontal_border"></div>
+        </div>
+    </div>
+
+    <!-- start food-idea section   -->
+    <section class="food-idea pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./asset/image/food-idea.png" class="img-fluid" alt="food-idea-image">
+                </div>
+                <div class="col">
+                    <div class="food-idea-heading">
+                        <h2>Best food ideas & <br>traditions in the world</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="food-idea-text-1">
+                                <p>Codulgence diminution so discovered mr apartments. Are off under folly death wrote
+                                    cause her way spite. Plan upon yet way get cold spot its week. Almost do am or
+                                    limits hearts. Resolve parties but why she shewing. She sang know now. </p>
+                                <button class="border-0 bg-danger p-3 mt-3 text-uppercase">explore Menu</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="food-idea-text-2 text-white bg-dark m-2 p-3">
+                                <h6>Breakfast</h6>
+                                <p>Reservations for every day from 07am to 11.30am</p>
+                                <h6>Lunch</h6>
+                                <p>Reservations for every day from 12pm to 1.30pm</p>
+                                <h6>Dinner</h6>
+                                <p>Reservations for every day from 6pm to 8.45pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end food-idea section   -->
+
+    <!-- start speacial menu  -->
+    <section class="special-menu pt-5">
+        <div class="container">
+            <h2 class="text-center">Our Specials Menu</h2>
+            <div class="special-menu-list pt-4">
+                <ul class="list-unstyled d-flex rounded border text-uppercase">
+                    <li class="m-2 p-2">main dishes</li>
+                    <li class="m-2 p-2">Desserts</li>
+                    <li class="m-2 p-2">Sea Food</li>
+                    <li class="m-2 p-2">Beverage</li>
+                    <li class="m-2 p-2">Set menu</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end speacial menu  -->
+
+    <!-- start special-menu-card  -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/1.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/2.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/3.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/4.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/5.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card_1 position-relative">
+                        <img src="./asset/image/6.png" class="card-img-top" alt="Delicious Pizza">
+                        <div class="card-body_1 d-flex justify-content-between bg-white">
+                            <p class="card-text p-1">price:250/=</p>
+                            <i class="text-danger fa-solid fa-star"></i>
+                            <p class="card-text p-1">4.9(2.2k)</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title p-2">braised chiken legs</h5>
+                    <div class="card-body-list d-flex justify-content-between p-2">
+                        <p class="card-text">4 chiken legs</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">chili sause</p>
+                        <i class="text-danger fa-solid fa-circle"></i>
+                        <p class="card-text">soft drinks</p>
+                    </div>
+                    <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
+                        <i class="text-danger fa-solid fa-shopping-cart"></i>
+                        <span class="text-danger text-capitalize">add to cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end special-menu-card  -->
+
+    <!-- start table and form section  -->
+    <section class="table mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column for Text Content -->
+                <div class="col-12 col-md-6">
+                    <div class="table-text text-white mt-4">
+                        <h2 class="pt-3">Reserve Your Favorite <br> Private Table</h2>
+                        <p class="pt-3">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio
+                            Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give
+                            you an experience that you’ll have a hard time forgetting.</p>
+                        <div class="bottom-text d-flex justify-content-between pt-5">
+                            <div>
+                                <p>Breakfast Menu</p>
+                                <p>125+ items</p>
+                            </div>
+                            <div>
+                                <p>Lunch Menu</p>
+                                <p>100+ items</p>
+                            </div>
+                            <div>
+                                <p>Dinner Menu</p>
+                                <p>80+ items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column for Form -->
+                <div class="col-12 col-md-6">
+                    <div class="table-form mt-5 bg-white p-3 rounded">
+                        <form>
+                            <!-- Phone Number -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label"></label>
+                                <input type="tel" class="form-control custom-number-size bg-white" id="phone"
+                                    placeholder="Phone Number">
+                            </div>
+
+                            <!-- Dropdown for Number of parson -->
+                            <div class="mb-3">
+                                <label for="parson" class="form-label"></label>
+                                <select class="form-select custom-dropdown-width bg-white" id="parson">
+                                    <option>Number of Guests</option>
+                                    <option value="1" selected>1 Person</option>
+                                    <option value="2">2 Person</option>
+                                    <option value="3">3 Person</option>
+                                    <option value="4">4 Person</option>
+                                    <option value="5">5 Person</option>
+                                    <option value="6">6 Person</option>
+                                </select>
+                            </div>
+
+                            <!-- Date Input -->
+                            <div class="mb-3">
+                                <label for="date" class="form-label"></label>
+                                <input type="date" class="form-control custom-number-size bg-white" id="date"
+                                    name="date" placeholder="Date">
+                            </div>
+
+                            <!-- Time Picker -->
+                            <div class="mb-3">
+                                <label for="time" class="form-label"></label>
+                                <select class="form-select custom-dropdown-width bg-white" id="time">
+                                    <option>Choose a Time</option>
+                                    <option value="1" selected>10:00 AM</option>
+                                    <option value="2">11:00 AM</option>
+                                    <option value="3">12:00 PM</option>
+                                    <option value="4">01:00 PM</option>
+                                    <option value="5">02:00 PM</option>
+                                    <option value="6">03:00 PM</option>
+                                </select>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-danger p-2">Book a Table</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end table and form section  -->
+
+    <!-- start gallery section -->
+
+    <div class="container gallery">
+        <h2 class="text-center mt-3 mb-4">Our Food Gallery</h2>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <!-- First Image (col-4) -->
+            <div class="col-4">
+                <img src="./asset/image/vertical.png" class="img-fluid rounded" alt="Image 1">
+            </div>
+
+            <!-- Second and Third Images (col-4 each) -->
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6 image-margin">
+                        <img src="./asset/image/5.png" class="img-fluid rounded" alt="Image 2">
+                    </div>
+                    <div class="col-6 image-margin">
+                        <img src="./asset/image/4.png" class="img-fluid rounded" alt="Image 3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./asset/image/2.png" class="img-fluid rounded" alt="Image 4">
+                    </div>
+                    <div class="col-6">
+                        <img src="./asset/image/5.png" class="img-fluid rounded" alt="Image 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallery section -->
+
+    <!--start last section-->
+
+    <footer class="footer-bg text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+
+            <div class="logo-container">
+                <div class="horizontal-line"></div>
+                <div class="text-center mx-3">
+                    <img src="./asset/image/footer-logo.png" alt="Logo">
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+
+            <!-- About Us -->
+            <div class="row text-center text-md-left">
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">About Us</h5>
+                    <p>Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction
+                        neglected.</p>
+                    <div class="social-links pt-5 ">
+                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Explore -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Explore</h5>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Contact</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Return Policy</a>
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Contact Info</h5>
+                    <p>
+                        <i class="text-white fa-solid fa-paper-plane border-0 p-1 bg-danger"></i> Dogair Bazar,
+                        Signboard, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demra, Dhaka - 1206
+                    </p>
+                    <p>
+                        <i class="text-white fa-solid fa-phone border-0 p-1 bg-danger"></i> +880 1728 619733, +880 1728
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        000000
+                    </p>
+                    <p>
+                        <i class="text-white fa-regular fa-paper-plane border-0 p-1 bg-danger"></i>
+                        nasrullah.cit.bd@gmail.com
+                    </p>
+                </div>
+
+                <!-- Subscription -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Subscription</h5>
+                    <p>Join our subscribers list to get the latest news and special offers.</p>
+                    <form>
+                        <input type="email" class="bg-dark border-0 rounded custom_input me-2" placeholder="Your email">
+                        <button class="btn btn-danger mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copyright text-center">
+        <div class="container">
+            <span class="text-white">
+                © Copyright 2024 Restan. All Rights Reserved by Restan.
+            </span>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('offcanvasBtn').addEventListener('click', function () {
+            document.getElementById('offcanvasMenu').classList.add('show');
+            document.getElementById('offcanvasBackdrop').style.display = 'block';
+        });
+
+        document.getElementById('offcanvasClose').addEventListener('click', function () {
+            document.getElementById('offcanvasMenu').classList.remove('show');
+            document.getElementById('offcanvasBackdrop').style.display = 'none';
+        });
+
+        document.getElementById('offcanvasBackdrop').addEventListener('click', function () {
+            document.getElementById('offcanvasMenu').classList.remove('show');
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
