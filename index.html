@@ -11,6 +11,7 @@
 
 
 </head>
+<!-- responsive       col-sm-12 col-md-6 col-lg-6 col-12  -->
 
 <body>
     <div class="menu">
@@ -38,13 +39,14 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Cart, Notification, and Offcanvas icons on the right -->
-                <div class="d-flex top-number-and-icon">
-                    <a class="nav-link" href="#"><p class="top-number border bg-danger text-white rounded-circle">10</p>
+                <div class="top-number-and-icon d-flex position-relative">
+                    <a class="nav-link" href="#">
                         <i class="fas fa-shopping-cart text-dark"></i>
                     </a>
-                    
+                    <div class="number position-absolute">
+                        <p class="top-number border bg-danger text-white rounded-circle">10</p>
+                    </div>
                     <button class="btn btn-outline-secondary border-0" type="button" id="offcanvasBtn">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
@@ -69,7 +71,7 @@
         </div>
         <div class="offcanvas-backdrop" id="offcanvasBackdrop" style="display: none;"></div>
         <div class="menu-text text-center">
-            <h1 class="text-white">RESTAN</h1>
+            <h1 class="text-white col-xs-12 col-sm-12">RESTAN</h1>
             <span class="text-white border-0 bg-danger  ">Restaurant</span>
         </div>
         <div class="menu-text-and-border d-flex justify-content-center">
@@ -156,8 +158,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -182,8 +184,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -207,8 +209,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -232,8 +234,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -257,8 +259,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -282,8 +284,8 @@
                         <p class="card-text">soft drinks</p>
                     </div>
                     <a href="#" class="border border-danger text-center cart p-2 text-decoration-none mb-2">
-                        <i class="text-danger fa-solid fa-shopping-cart"></i>
-                        <span class="text-danger text-capitalize">add to cart</span>
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="text-capitalize">add to cart</span>
                     </a>
                 </div>
             </div>
@@ -383,9 +385,23 @@
     </div>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <!-- First Image (col-4) -->
+            <!-- First Image (col-4)- -->
             <div class="col-4">
-                <img src="./asset/image/vertical.png" class="img-fluid rounded" alt="Image 1">
+                <div class="position-relative gallery-img">
+                    <img src="./asset/image/vertical.png" class="img-fluid rounded" alt="Image 1">
+                    <div class="gallery-text">
+                        <h6>Minion Drinks</h6>
+                        <p>Cold Lemon Juice</p>
+                    </div>
+                    <div class="gallery-border-1">
+                        <div class="gallery-left-border"></div>
+                    </div>
+                    <div class="gallery-border-2">
+                        <div class="gallery-bottom-border"></div>
+                    </div>
+
+                </div>
+
             </div>
 
             <!-- Second and Third Images (col-4 each) -->
@@ -393,6 +409,7 @@
                 <div class="row">
                     <div class="col-6 image-margin">
                         <img src="./asset/image/5.png" class="img-fluid rounded" alt="Image 2">
+
                     </div>
                     <div class="col-6 image-margin">
                         <img src="./asset/image/4.png" class="img-fluid rounded" alt="Image 3">
@@ -433,10 +450,20 @@
                     <p>Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction
                         neglected.</p>
                     <div class="social-links pt-5 ">
-                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="text-white me-2 p-2"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" class="text-white p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <ul class="list-unstyled social-links-list d-flex">
+                            <li>
+                                <a href="#" class="text-white me-2"><i class="blue fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white me-2"><i class="pantone fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white me-2"><i class=" red fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white"><i class="blue-brand fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
